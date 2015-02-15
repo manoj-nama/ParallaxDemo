@@ -43,3 +43,118 @@ table {
 	border-spacing: 0;
 }
 /* ================================================== */
+
+body {
+	background-color: #eee;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+#container {
+	/*height: 5000px;*/
+}
+
+.month {overflow: hidden;}
+.month .img-container {
+	position: relative;
+	box-shadow: 0 0 50px rgba(0,0,0,0.2) inset;
+	height: 30em;
+	overflow: hidden;
+}
+.month .img-container .month-cap {
+	position: absolute;
+	font-size: 3.5em;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: 400;
+	color: #000;
+	left: 10%; top: 10%;
+}
+.month .img-container img {
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+.img1 { z-index: -12; }
+.img2 { z-index: -11; top: 30%;}
+.img3 { z-index: -10; top: 30%; }
+.img4 { z-index: -9; top: 30%; }
+.img5 { z-index: -8; top: 30%; }
+.img6 { z-index: -7; top: 30%; }
+.img7 { z-index: -6; top: 30%; }
+.img8 { z-index: -5; top: 30%; }
+.img9 { z-index: -4; top: 30%; }
+.img10 { z-index: -3; top: 30%; }
+.img11 { z-index: -2; }
+.img12 { z-index: -1; }
+
+.purp { background-color: #8560a8;}
+.green { background-color: #005826;}
+.tan { background-color: #d16633;}
+.teal { background-color: #1baea7;}
+.grey { background-color: #aaa;}
+.mar { background-color: #9e0b0f;}
+
+.calendar {
+	/*box-shadow: 0 0 50px rgba(0,0,0,0.4);*/
+	/*opacity: 0.4;*/
+	background-color: #fff;
+	min-height: 20em;
+	height: 100%;
+	/*position: relative;*/
+	padding: 2em 0;
+}
+.calendar .agenda {
+	width: 90%;
+	max-width: 50em;
+	padding-bottom: 1em;
+	margin: 0 auto;
+}
+
+.agenda .item { overflow: hidden; }
+.agenda .item .date {
+	box-sizing: border-box;
+	padding: 10px;
+	padding-top: 20px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	background-color: #eee;
+	line-height: 1.5em;
+	float: left;
+	width: 10%;
+	text-align: center;
+}
+.agenda .item .date .day { font-size: 2em; display: block; font-weight: bold; }
+.agenda .item .date .dow { display: block; }
+.agenda .item .copy {
+	float: right;
+	margin-bottom: 1em;
+	box-sizing: border-box;
+	padding: 10px 20px 0 20px;
+	border-radius: 5px;
+	line-height: 2em;
+	width: 85%;
+	 color: #fff;
+}
+.agenda .item .copy .title { font-size: 1.5em; display: block; font-weight: 400; }
+.agenda .item .copy .time { display: block; font-weight: 300; }
+
+#topper {
+	position: fixed;
+	top: 10px; left: 10px;
+	z-index: 1001;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+}
+
+.footer {
+	background-color: #eee;
+	border-top: 1px solid #ddd;
+	color: #333;
+	padding: 3em 0;
+	text-align: center;
+}
+
+.footer strong {font-weight: 600;}
