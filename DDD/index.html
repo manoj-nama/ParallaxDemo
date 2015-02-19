@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ThreeD</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	
+	<!-- <div id="topper">0</div> -->
+
+	<div id="skrollr-body">
+		
+		<!-- background -->
+		<img src="img/plx-bg.png" class="bg item"
+			data-start="transform: translateX(0px);"
+			data-end="transform: translateX(-600px);"
+		>
+		<!-- End Background -->
+
+		<!-- section1 -->
+		<img src="img/plx1.png" class="item layer"
+			data-0p="transform: translateX(0%);"
+			data-60p="transform: translateX(-60%);"
+			data-end="transform: translateX(-150%);"
+		>
+
+		<img src="img/plx2.png" class="item layer"
+			data-0p="transform: translateX(10%);"
+			data-60p="transform: translateX(-90%);"
+			data-end="transform: translateX(-150%);"
+		>
+
+		<img src="img/plx3.png" class="item layer"
+			data-0p="transform: translateX(30%);"
+			data-60p="transform: translateX(-200%);"
+			data-end="transform: translateX(-250%);"
+		>
+
+		<img src="img/plx4.png" class="item layer"
+			data-0p="transform: translateX(40%);"
+			data-60p="transform: translateX(-300%);"
+			data-end="transform: translateX(-350%);"
+		>
+		<!-- End Section1 -->
+
+		<!-- Section2 -->
+		<img src="img/bl1.png" class="item layerst"
+			data-0p="transform: translateX(100%);"
+			data-40p="transform: translateX(70%);"
+			data-end="transform: translateX(-30%);"
+		>
+
+		<img src="img/bl3.png" style="opacity:0.4;" class="item layerst"
+			data-0p="transform: translateX(100%);"
+			data-40p="transform: translateX(90%);"
+			data-end="transform: translateX(10%);"
+		>
+
+		<img src="img/bl2.png" class="item layer"
+			data-40p="transform: translateX(160%);"
+			data-end="transform: translateX(-10%);"
+		>
+
+		<img src="img/bl3.png" class="item layerst"
+			data-40p="transform: translateX(130%);"
+			data-end="transform: translateX(-40%);"
+		>
+
+		<img src="img/bl4.png" class="item layerst"
+			data-40p="transform: translateX(160%);"
+			data-end="transform: translateX(-20%);"
+		>
+
+		<div class="item layerst"
+			data-40p="transform: translateX(170%);"
+			data-end="transform: translateX(-80%);"
+		>
+			<img src="img/bl5.png" class="smallc2">
+		</div>
+
+		<div class="item layerst"
+			data-40p="transform: translateX(200%);"
+			data-end="transform: translateX(-80%);"
+		>
+			<img src="img/bl5.png" class="smallc">
+				
+		</div>
+
+		<div class="item layerst"
+			data-40p="transform: translateX(250%);"
+			data-end="transform: translateX(-10%);"
+		>
+			<img src="img/bl6.png" class="smallc3">
+				
+		</div>
+
+		<h1 class="item layer"
+			data-40p="transform: translateX(160%); opacity: 0"
+			data-60p="transform: translateX(120%); opacity: 0"
+			data-end="transform: translateX(0%); opacity: 1"
+		>
+			<span>
+				Parallaxing!!!!!
+			</span>
+		</h1>
+		<!-- End Section2 -->
+
+	</div>
+	
+
+	<script src="js/skrollr.min.js"></script>
+	<script>
+		var el = document.getElementById("topper");
+		var s = skrollr.init({
+			forceHeight: false,
+			smoothScrollingDuration: 500,
+			render: function (e) {
+				// el.innerHTML = e.curTop;
+			}
+		});
+	</script>
+</body>
+</html>
