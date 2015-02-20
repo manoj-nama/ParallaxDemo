@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic BG - Effect</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<div id="container">
+		<div class="bg bg1"
+			data-start="background-position-y: 0%"
+			data-end="background-position-y: 180%"
+		></div>
+		<div class="bg bg2"
+			data-start="background-position-y: 0%"
+			data-end="background-position-y: 180%"
+		></div>
+		<div class="bg bg3"
+			data-start="background-position-y: 0%"
+			data-end="background-position-y: 180%"
+		></div>
+		<div class="bg bg4"
+			data-start="background-position-y: 0%"
+			data-end="background-position-y: 180%"
+		></div>
+		<div class="bg bg5"
+			data-start="background-position-y: 0%"
+			data-end="background-position-y: 180%"
+		></div>
+	</div>
+
+	<script src="js/skrollr.min.js"></script>
+	<script>
+		var s = skrollr.init({
+			forceHeight: false,
+			smoothScrollingDuration: 600,
+			render: function(e) {
+
+			}
+		});
+	</script>
+</body>
+</html>

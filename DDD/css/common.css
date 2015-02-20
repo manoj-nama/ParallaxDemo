@@ -6,7 +6,11 @@
 
 body, html {
 	width: 100%;
+	/*overflow: hidden;*/
 	height: 200%;
+}
+body::-webkit-scrollbar {
+	display: none;
 }
 
 .bg {
